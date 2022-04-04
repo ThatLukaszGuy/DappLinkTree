@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <base href="/">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bg.css">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Dapp Link Tree</title>
+</head>
+<body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="container-fluid">
+        
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Dapp Link Tree</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="navbar-collapse collapse show" id="navbarColor03" style="">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#home">Home
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+
+              </div>
+            </div>
+          </nav>
+        
+          <section class="links" id="home">
+
+            <% links.forEach((link) => { %>
+                <div class="card container d-flex my-4 flex-column justify-content-center customCard">
+                    <div class="card-body">
+                        <h4 class="card-title">Project : <%= link.name %></h4>
+                        <p class="text-muted"><%= link.content %></p>
+                        <a href='<%= link.url %>' target="_blank" class="btn btn-primary">Visit !</a>
+                    </div>
+                </div>
+            <% }) %>
+
+          </section>
+        
+          <section id="about"  class="links">
+            
+              <div class="card container d-flex my-4 flex-column justify-content-center customCard ">
+                <div class="card-body">    
+                  <h4 class="card-title">Hi There,</h4>
+                  <p class="text-muted">I'm Łukasz and this little page is nothing but a simple link tree to all my dapp/web3/solidity projects that are available on the net</p>
+                  <a href='#' target="_blank" class="btn btn-primary">For more of my stuff check out my Github !</a>
+                </div>
+                </div>
+          
+            </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

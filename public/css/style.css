@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.customCard {
+    max-width: 70vw !important;
+}
